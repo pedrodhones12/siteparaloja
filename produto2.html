@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Produto 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Roupas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-details">
+        <h2>Detalhes do Produto 1</h2>
+
+        <div class="product">
+            <img src="IMG/moda it.jpg" alt="Produto 1">
+            <h3>Nome do Produto 1</h3>
+            <p>Descrição detalhada do produto.</p>
+            <p>Tamanhos disponíveis:</p>
+            <button onclick="selecionarTamanho('P')">P</button>
+            <button onclick="selecionarTamanho('M')">M</button>
+            <button onclick="selecionarTamanho('G')">G</button>
+            <button onclick="selecionarTamanho('GG')">GG</button>
+            <p>Quantidade em estoque: XX unidades</p>
+        </div>
+
+        <a href="https://api.whatsapp.com/send?phone=NUMERO_DO_WHATSAPP&text=Olá! Gostaria de comprar o Produto 1 no tamanho XX" class="btn">Comprar agora via WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Construindo Sonhos Web. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function selecionarTamanho(tamanho) {
+            var linkWhatsApp = "https://api.whatsapp.com/send?phone=+5573981135119&text=Olá! Gostaria de comprar o Produto 2 no tamanho " + tamanho;
+            window.location.href = linkWhatsApp;
+        }
+    </script>
+</body>
+</html>
