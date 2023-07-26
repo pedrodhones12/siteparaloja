@@ -31,7 +31,7 @@
             <p>Quantidade em estoque: XX unidades</p>
         </div>
 
-        <a href="https://api.whatsapp.com/send?phone=NUMERO_DO_WHATSAPP&text=Olá! Gostaria de comprar o Produto 1 no tamanho XX" class="btn">Comprar agora via WhatsApp</a>
+        <a href="#" class="btn" id="comprar-btn">Comprar agora via WhatsApp</a>
     </section>
 
     <footer>
@@ -40,10 +40,11 @@
 
     <script>
         function selecionarTamanho(tamanho) {
-            var linkWhatsApp = "https://api.whatsapp.com/send?phone=+5573981135119&text=Olá! Gostaria de comprar o Produto 1 no tamanho " + tamanho;
+            var numeroWhatsApp = "+NUMERO_DO_WHATSAPP"; // Substitua "NUMERO_DO_WHATSAPP" pelo número correto
+            var mensagem = "Olá! Gostaria de comprar o Produto 1 no tamanho " + tamanho;
+            var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp + "&text=" + encodeURIComponent(mensagem);
             window.location.href = linkWhatsApp;
         }
     </script>
 </body>
 </html>
-
