@@ -37,23 +37,34 @@ h2 {
     margin-bottom: 20px;
 }
 
-.product {
-    display: inline-block;
-    width: 250px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para centralizar os produtos horizontalmente */
 }
 
-.product img {
+.product-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px; /* Ajuste a largura conforme necessário */
+}
+
+.product-card a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product-card img {
     width: 100%;
     height: auto;
 }
 
-.product h3 {
+.product-card h2 {
     margin: 10px 0;
 }
 
-.product p {
+.product-card p {
     margin-bottom: 10px;
 }
 
